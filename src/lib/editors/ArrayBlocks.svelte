@@ -2,8 +2,9 @@
 	import type { CommonComponentParameters } from "../types/CommonComponentParameters";
 	import { emptyValue } from "../types/schema";
 	import SubSchemaForm from "../SubSchemaForm.svelte";
-	import _, { max } from "lodash-es";
-    import { pathCombine } from "../utilities.js";
+	// @ts-ignore
+	import _  from "lodash-es";
+	import { pathCombine } from "../utilities.js";
 
 	export let params: CommonComponentParameters;
 	export let schema: any;
