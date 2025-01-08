@@ -19,13 +19,15 @@
 	},
 	"homepage": "https://github.com/restspace/svelte-schema-form#readme",
 	"exports": {
-        ".": {
-            "types": "./dist/index.d.ts",
-            "svelte": "./dist/index.js"
-        },
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js"
+		},
 		"./*": "./dist/*"
-    },
-	"files": ["dist"],
+	},
+	"files": [
+		"dist"
+	],
 	"main": "dist/index.js",
 	"scripts": {
 		"dev": "vite dev",
@@ -37,16 +39,18 @@
 		"copyout": "xcopy /s /y src\\lib ..\\svelte-schema-form-script\\svelte-schema-form\\src\\lib"
 	},
 	"devDependencies": {
-    	"@sveltejs/adapter-auto": "^2.0.1",
+		"@sveltejs/adapter-auto": "^2.0.1",
 		"@sveltejs/kit": "^1.16.3",
 		"@sveltejs/package": "^2.0.2",
-		"@types/lodash-es": "^4.17.6",
+		"@types/lodash-es": "^4.17.12",
+		"path": "^0.12.7",
 		"sass": "^1.57.1",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
 		"tslib": "^2.4.1",
-		"typescript": "^4.9.3",
-		"vite": "^4.0.0"
+		"typescript": "^5.0.0",
+		"vite": "^4.0.0",
+		"vitest": "^2.1.8"
 	},
 	"type": "module",
 	"dependencies": {
@@ -54,6 +58,6 @@
 		"lodash-es": "^4.17.21"
 	},
 	"peerDependencies": {
-		"svelte": "^3.0.0"
+		"svelte": "^5.0.0"
 	}
 }
