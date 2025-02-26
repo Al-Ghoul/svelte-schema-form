@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { select_options, tick } from "svelte/internal";
 	import type { CommonComponentParameters } from "../types/CommonComponentParameters";
 
 	interface OptionVal {
@@ -50,7 +49,6 @@
 		dropdownState = dropdownState === "open" ? "closed" : "open";
 		if (dropdownState === "open") {
 			inputState = "searching";
-			await tick();
 			input.focus();
 		}
 	};
